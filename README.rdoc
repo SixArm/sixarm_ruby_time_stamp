@@ -1,0 +1,7 @@
+= SixArm.com » Ruby » Time.stamp method for ISO RFC date and time stamp
+
+Author:: Joel Parker Henderson, joel@joelparkerhenderson.com
+Copyright:: Copyright (c) 2006-2011 Joel Parker Henderson
+License:: See LICENSE.txt file
+
+
