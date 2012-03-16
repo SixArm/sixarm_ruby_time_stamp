@@ -4,17 +4,19 @@ require 'simplecov'
 SimpleCov.start
 require 'sixarm_ruby_time_stamp'
 
-class TimeTest < Test::Unit::TestCase
+describe Time do
 
- def test_stamp_with_class_method
-   t=Time.stamp
-   assert(t=~/^\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\dZ$/,t)
- end
+  describe "#stamp" do
 
- def test_stamp_with_instance_method
-   t=Time.now.stamp
-   assert(t=~/^\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\dZ$/,t)
- end
+    it "with class method" do
+      Time.stamp.must_match /^\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\dZ$/
+    end
+
+    it "with instance method" do
+      Time.now.stamp.must_match /^\d\d\d\d-\d\d-\d\d \d\d:\d\d:\d\dZ$/
+    end
  
+  end
+
 end
 

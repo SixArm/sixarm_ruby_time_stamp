@@ -1,3 +1,0 @@
-CHANGELOG
-
-2011-11-07 1.0.0 Copied from sixarm_ruby_ramp to this independent gem
