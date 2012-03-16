@@ -30,7 +30,6 @@ Require:
 
 ## Examples
 
-    require "sixarm_ruby_time_stamp"
     puts Time.stamp  #=> "2010-12-31 12:59:59Z"
     puts Time.now.stamp  #=> "2010-12-31 12:59:59Z"
 
