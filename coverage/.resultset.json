@@ -1,1 +1,47 @@
-{"Unit Tests":{"coverage":{"/home/sixarm/git/sixarm_ruby_time_stamp/lib/sixarm_ruby_time_stamp.rb":[null,null,null,null,null,null,1,null,null,null,null,null,null,null,null,null,null,null,null,1,0,null,null,null,null,null,null,null,null,null,null,null,1,0,null,null,null,null]},"timestamp":1331936821}}
+{
+  "Unit Tests": {
+    "coverage": {
+      "/home/sixarm/git/sixarm_ruby_time_stamp/lib/sixarm_ruby_time_stamp.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1342369595
+  }
+}

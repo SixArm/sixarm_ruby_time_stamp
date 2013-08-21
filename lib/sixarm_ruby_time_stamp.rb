@@ -18,7 +18,7 @@ class Time
   #   => "2010-12-31 12:59:59Z" 
 
   def stamp
-    getutc.strftime('%Y-%m-%d %H:%M:%SZ')
+    getutc.strftime('%Y-%m-%dT%H:%M:%SZ')
   end
 
 
@@ -26,7 +26,7 @@ class Time
   #
   # @example
   #   Time.stamp
-  #    => "2010-12-31 12:59:59Z" 
+  #    => "2010-12-31T12:59:59Z" 
   #
   # @return [String] Time.now.stamp
 
