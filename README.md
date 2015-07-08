@@ -1,4 +1,4 @@
-# Ruby » <br> Time.stamp method for ISO RFC date and time stamp
+# SixArm.com » Ruby » <br> Time.stamp method for ISO RFC date and time stamp
 
 [![Code Climate](https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp.png)](https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_time_stamp.png)](https://travis-ci.org/SixArm/sixarm_ruby_time_stamp)
@@ -25,7 +25,7 @@ Install:
 
 Bundler:
 
-    gem "sixarm_ruby_time_stamp", "~>1.1.0"
+    gem "sixarm_ruby_time_stamp", ">=1.1.3", "<2"
 
 Require:
 
