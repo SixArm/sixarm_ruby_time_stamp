@@ -6,18 +6,20 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.7.5
+    &mdash; Documentation by YARD 0.8.7.6
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  if (relpath != '') relpath += '/';
+  framesUrl = "frames.html#!file.README.html";
 </script>
+
 
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
@@ -26,129 +28,113 @@
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
     <div id="header">
       <div id="menu">
   
-    <a href="_index.html" title="Index">Index</a> &raquo; 
+    <a href="_index.html">Index</a> &raquo; 
     <span class="title">File: README</span>
   
-  
+
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
       <div id="search">
   
-    <a id="class_list_link" href="#">Class List</a>
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
   
-    <a id="method_list_link" href="#">Method List</a>
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
   
-    <a id="file_list_link" href="#">File List</a>
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
   
 </div>
       <div class="clear"></div>
     </div>
-    
+
     <iframe id="search_frame"></iframe>
-    
-    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » <br> Time.stamp method for ISO RFC date and time stamp</h1>
 
-<ul>
-<li>Docs: <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">http://sixarm.com/sixarm_ruby_time_stamp/doc</a></li>
-<li>Repo: <a href="http://github.com/sixarm/sixarm_ruby_time_stamp">http://github.com/sixarm/sixarm_ruby_time_stamp</a></li>
-<li>Email: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
-</ul>
-
-<h2>Introduction</h2>
+    <div id="content"><div id='filecontents'>
+<h1 id="label-SixArm.com+-C2-BB+Ruby+-C2-BB++Time.stamp+method+for+ISO+RFC+formats">SixArm.com » Ruby » <br> Time.stamp method for ISO RFC formats</h1>
+<!--HEADER-OPEN-->
+<p><a href="http://badge.fury.io/rb/sixarm_ruby_time_stamp"><img
+src="https://badge.fury.io/rb/sixarm_ruby_time_stamp.svg"></a> <a
+href="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp"><img
+src="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp.png"></a> <a
+href="https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp"><img
+src="https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp.png"></a>
+<a
+href="https://coveralls.io/github/SixArm/sixarm_ruby_time_stamp?branch=master"><img
+src="https://coveralls.io/repos/SixArm/sixarm_ruby_time_stamp/badge.svg?branch=master&service=github"></a></p>
+<ul><li>
+<p>Git: <a
+href="https://github.com/sixarm/sixarm_ruby_time_stamp">github.com/sixarm/sixarm_ruby_time_stamp</a></p>
+</li><li>
+<p>Doc: <a
+href="http://sixarm.com/sixarm_ruby_time_stamp/doc">sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
+</li><li>
+<p>Gem: <a
+href="https://rubygems.org/gems/sixarm_ruby_time_stamp">rubygems.org/gems/sixarm_ruby_time_stamp</a></p>
+</li><li>
+<p>Contact: Joel Parker Henderson, <a
+href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Changes: See CHANGES.md file.</p>
+</li><li>
+<p>License: See LICENSE.md file.</p>
+</li><li>
+<p>Helping: See CONTRIBUTING.md file.</p>
+</li></ul>
+<!--HEADER-SHUT-->
+<h2 id="label-Introduction">Introduction</h2>
 
 <p>Provides timestamp methods Time.stamp and Time#stamp</p>
 
-<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">http://sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
+<p>For docs go to <a
+href="http://sixarm.com/sixarm_ruby_time_stamp/doc">sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
+<!--INSTALL-OPEN-->
+<h2 id="label-Install">Install</h2>
 
-<h2>Quickstart</h2>
+<p>To install using a Gemfile, add this:</p>
 
-<p>Install:</p>
-
-<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_time_stamp'>sixarm_ruby_time_stamp</span>
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;= 1.1.3</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt; 2</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
 
-<p>Bundler:</p>
+<p>To install using the command line, run this:</p>
 
-<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=1.1.0</span><span class='tstring_end'>&quot;</span></span>
+<pre class="code ruby"><code class="ruby">gem install sixarm_ruby_time_stamp -v &quot;&gt;= 1.1.3, &lt; 2&quot;</code></pre>
+
+<p>To install using the command line with high security, run this:</p>
+
+<pre class="code ruby"><code class="ruby">wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem &amp;&amp; gem sources --add http://sixarm.com
+gem install sixarm_ruby_time_stamp -v &quot;&gt;= 1.1.3, &lt; 2&quot; --trust-policy HighSecurity</code></pre>
+
+<p>To require the gem in your code:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&quot;</span></span>
 </code></pre>
+<!--INSTALL-SHUT-->
+<h2 id="label-Examples">Examples</h2>
 
-<p>Require:</p>
-
-<pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&quot;</span></span>
-</code></pre>
-
-<h2>High Security (Optional)</h2>
-
-<p>To enable high security for all our gems:</p>
-
-<pre class="code ruby"><code>wget http://sixarm.com/sixarm.pem
-gem cert --add sixarm.pem
-gem sources --add http://sixarm.com
-</code></pre>
-
-<p>To install with high security:</p>
-
-<pre class="code ruby"><code>gem install sixarm_ruby_time_stamp --test --trust-policy HighSecurity
-</code></pre>
-
-<h2>Examples</h2>
-
-<pre class="code ruby"><code><span class='id identifier rubyid_puts'>puts</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span>  <span class='comment'>#=&gt; &quot;2010-12-31 12:59:59Z&quot;
-</span><span class='id identifier rubyid_puts'>puts</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span>  <span class='comment'>#=&gt; &quot;2010-12-31 12:59:59Z&quot;
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_puts'>puts</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span>  <span class='comment'>#=&gt; &quot;2010-12-31T12:59:59Z&quot;
+</span><span class='id identifier rubyid_puts'>puts</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span>  <span class='comment'>#=&gt; &quot;2010-12-31T12:59:59Z&quot;
 </span></code></pre>
-
-<h2>Changes</h2>
-
-<ul>
-<li>2012-03-16 1.1.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.</li>
-<li>2011-11-07 1.0.0 Copied from sixarm<em>ruby</em>ramp to this independent gem</li>
-</ul>
-
-<h2>License</h2>
-
-<p>You may choose any of these open source licenses:</p>
-
-<ul>
-<li>Apache License</li>
-<li>BSD License</li>
-<li>CreativeCommons License, Non-commercial Share Alike</li>
-<li>GNU General Public License Version 2 (GPL 2)</li>
-<li>GNU Lesser General Public License (LGPL)</li>
-<li>MIT License</li>
-<li>Perl Artistic License</li>
-<li>Ruby License</li>
-</ul>
-
-<p>The software is provided &quot;as is&quot;, without warranty of any kind, 
-express or implied, including but not limited to the warranties of 
-merchantability, fitness for a particular purpose and noninfringement. </p>
-
-<p>In no event shall the authors or copyright holders be liable for any 
-claim, damages or other liability, whether in an action of contract, 
-tort or otherwise, arising from, out of or in connection with the 
-software or the use or other dealings in the software.</p>
-
-<p>This license is for the included software that is created by SixArm;
-some of the included software may have its own licenses, copyrights, 
-authors, etc. and these do take precedence over the SixArm license.</p>
-
-<p>Copyright (c) 2005-2013 Joel Parker Henderson</p>
 </div></div>
-    
+
     <div id="footer">
-  Generated on Fri Mar 16 15:27:01 2012 by 
+  Generated on Sat Jul 18 23:16:51 2015 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.5 (ruby-1.9.3).
+  0.8.7.6 (ruby-2.2.2).
 </div>
 
   </body>

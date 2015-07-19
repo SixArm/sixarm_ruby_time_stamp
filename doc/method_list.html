@@ -8,18 +8,23 @@
     
       <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
     
-    
+
     
       <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
     
       <script type="text/javascript" charset="utf-8" src="js/full_list.js"></script>
     
-    
+
+    <title>Method List</title>
     <base id="base_target" target="_parent" />
   </head>
   <body>
     <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) {
+      var hasFrames = false;
+      try {
+        hasFrames = window.top.frames.main ? true : false;
+      } catch (e) { }
+      if (hasFrames) {
         document.getElementById('base_target').target = 'main';
         document.body.className = 'frames';
       }
@@ -28,31 +33,33 @@
       <h1 id="full_list_header">Method List</h1>
       <div id="nav">
         
-          <a target="_self" href="class_list.html">Classes</a>
+          <span><a target="_self" href="class_list.html">
+            Classes
+          </a></span>
         
-          <a target="_self" href="method_list.html">Methods</a>
+          <span><a target="_self" href="method_list.html">
+            Methods
+          </a></span>
         
-          <a target="_self" href="file_list.html">Files</a>
+          <span><a target="_self" href="file_list.html">
+            Files
+          </a></span>
         
       </div>
       <div id="search">Search: <input type="text" /></div>
 
-      <ul id="full_list" class="methods">
+      <ul id="full_list" class="method">
         
 
   <li class="r1 ">
     <span class='object_link'><a href="Time.html#stamp-instance_method" title="Time#stamp (method)">#stamp</a></span>
-    
-      <small>Time</small>
-    
+    <small>Time</small>
   </li>
   
 
   <li class="r2 ">
     <span class='object_link'><a href="Time.html#stamp-class_method" title="Time.stamp (method)">stamp</a></span>
-    
-      <small>Time</small>
-    
+    <small>Time</small>
   </li>
   
 
