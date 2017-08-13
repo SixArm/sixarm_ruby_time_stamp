@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_time_stamp"
   s.summary        = "SixArm.com → Ruby → Time.stamp method"
   s.description    = "Time.stamp method to generate a string formatted with the RFC ISO date and time"
-  s.version        = "1.1.4"
+  s.version        = "1.1.5"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"

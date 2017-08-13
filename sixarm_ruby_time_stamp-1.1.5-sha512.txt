@@ -1,0 +1,1 @@
+2f24ec7b7f773b2d03f2ebf4963a737aface0d5adfca376ac603d3086eab787029284269eb6cafebbb3cc8ec704000482b4c90d165ea8c5032c3ce72b9aa3388  sixarm_ruby_time_stamp-1.1.5.gem
