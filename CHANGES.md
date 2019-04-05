@@ -1,5 +1,6 @@
 # Changes
 
+* 2019-04-05 3.0.0 Add time stamp format string methods
 * 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
 * 2017-08-14 1.1.6 Update minitest expectations
 * 2017-08-13 1.1.5 Update to Ruby 2.4, spdx licenses, rake test, etc.

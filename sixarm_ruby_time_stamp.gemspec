@@ -3,9 +3,9 @@
 Gem::Specification.new do |s|
 
   s.name           = "sixarm_ruby_time_stamp"
-  s.summary        = "SixArm.com → Ruby → Time.stamp method"
-  s.description    = "Time.stamp method to generate a string formatted with the RFC ISO date and time"
-  s.version        = "2.0.0"
+  s.summary        = "SixArm.com → Ruby → Time → stamp methods"
+  s.description    = "Time stamp methods to generate a string with formating such as RFC ISO datetime"
+  s.version        = "3.0.0"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
