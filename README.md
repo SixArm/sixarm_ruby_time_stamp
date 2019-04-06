@@ -4,9 +4,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/sixarm_ruby_time_stamp.svg)](http://badge.fury.io/rb/sixarm_ruby_time_stamp)
 [![Build Status](https://travis-ci.org/SixArm/sixarm_ruby_time_stamp.png)](https://travis-ci.org/SixArm/sixarm_ruby_time_stamp)
-[![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/f6a1b785a22692ac6a92/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp/maintainability)
+[![Code Climate](https://api.codeclimate.com/v1/badges/f6a1b785a22692ac6a92/maintainability)](https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp/maintainability)
 
-* Git: <https://github.com/sixarm/sixarm_ruby_time_stamp>
+* Git: <https://github.com/SixArm/sixarm_ruby_time_stamp>
 * Doc: <http://sixarm.com/sixarm_ruby_time_stamp/doc>
 * Gem: <https://rubygems.org/gems/sixarm_ruby_time_stamp>
 * Contact: Joel Parker Henderson, <joel@sixarm.com>
@@ -48,5 +48,25 @@ To require the gem in your code:
 
 ## Examples
 
-    puts Time.stamp  #=> "2010-12-31T12:59:59Z"
-    puts Time.now.stamp  #=> "2010-12-31T12:59:59Z"
+Generate a time stamp using the defaults:
+
+    Time.stamp  #=> "2020-12-31T12:59:59.000000000Z"
+
+Defaults:
+
+  * The current time
+  * The UTC time zone a.k.a. Zulu time zone a.k.a. "Z" time zome.
+  * Default RFC ISO format: '%Y-%m-%dT%H:%M:%S.%NZ'"
+  * Nanosecond precision
+
+Set a different format:
+
+    Time.stamp_format = "%Y/%M/%D %H:%M:%S UTC"
+    Time.stamp #=> "2020/12/31 12:59:59 UTC"
+
+The same methods are also available for an ins
+
+    t = Time.now
+    t.stamp #=> "2020-12-31T12:59:59.000000000Z"
+    t.stamp_format = "%Y/%M/%D %H:%M:%S UTC"
+    t.stamp #=> "2020/12/31 12:59:59 UTC"

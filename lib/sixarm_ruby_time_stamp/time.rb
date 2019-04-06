@@ -14,8 +14,8 @@ class Time
   # Example:
   #
   #     time = Time.now
-  #     time.stamp 
-  #     => "2010-12-31 12:59:59Z"
+  #     time.stamp
+  #     => "2020-12-31T12:59:59Z"
   #
   # Return: [String] a time stamp string
   #
@@ -28,7 +28,7 @@ class Time
   # Example:
   #
   #     Time.stamp
-  #     => "2010-12-31T12:59:59Z" 
+  #     => "2020-12-31T12:59:59Z"
   #
   # Return: [String] Time.now time stamp string
   #
