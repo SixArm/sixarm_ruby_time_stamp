@@ -29,11 +29,13 @@ Want to help? We're happy to get pull requests.
 
 ### Gem
 
-Run this command in your shell or terminal:
+To install this gem in your shell or terminal:
 
     gem install sixarm_ruby_time_stamp
 
-Or add this to your Gemfile:
+### Gemfile
+
+To add this gem to your Gemfile:
 
     gem 'sixarm_ruby_time_stamp'
 
@@ -55,18 +57,21 @@ Generate a time stamp using the defaults:
 Defaults:
 
   * The current time
+
   * The UTC time zone a.k.a. Zulu time zone a.k.a. "Z" time zome.
-  * Default RFC ISO format: '%Y-%m-%dT%H:%M:%S.%NZ'"
+
+  * Default RFC ISO format: "%Y-%m-%dT%H:%M:%S.%NZ'"
+
   * Nanosecond precision
 
 Set a different format:
 
-    Time.stamp_format = "%Y/%M/%D %H:%M:%S UTC"
-    Time.stamp #=> "2020/12/31 12:59:59 UTC"
+    Time.stamp_format = "%M/%D %H:%M"
+    Time.stamp #=> "12/31 12:59"
 
-The same methods are also available for an ins
+The same methods are also available for an instance:
 
     t = Time.now
     t.stamp #=> "2020-12-31T12:59:59.000000000Z"
-    t.stamp_format = "%Y/%M/%D %H:%M:%S UTC"
-    t.stamp #=> "2020/12/31 12:59:59 UTC"
+    t.stamp_format = "%M/%D %H:%M"
+    t.stamp #=> "12/31 12:59"
