@@ -57,58 +57,54 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1>SixArm.com → Ruby → <br> Time.stamp method for ISO RFC formats</h1>
-
+      <div id="content"><div id='filecontents'>
+<h1 id="label-SixArm.com+-E2-86-92+Ruby+-E2-86-92++Time.stamp+method+for+ISO+RFC+formats">SixArm.com → Ruby → <br> Time.stamp method for ISO RFC formats</h1>
 <!--header-open-->
-
-<p><a href="http://badge.fury.io/rb/sixarm_ruby_time_stamp"><img src="https://badge.fury.io/rb/sixarm_ruby_time_stamp.svg" alt="Gem Version"></a>
-<a href="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp"><img src="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp.png" alt="Build Status"></a>
-<a href="https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp/maintainability"><img src="https://api.codeclimate.com/v1/badges/f6a1b785a22692ac6a92/maintainability" alt="Code Climate"></a></p>
-
-<ul>
-<li>Git: <a href="https://github.com/SixArm/sixarm_ruby_time_stamp">https://github.com/SixArm/sixarm_ruby_time_stamp</a></li>
-<li>Doc: <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">http://sixarm.com/sixarm_ruby_time_stamp/doc</a></li>
-<li>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_time_stamp">https://rubygems.org/gems/sixarm_ruby_time_stamp</a></li>
-<li>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
-<li>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</li>
-</ul>
-
+<p><a href="http://badge.fury.io/rb/sixarm_ruby_time_stamp"><img src="https://badge.fury.io/rb/sixarm_ruby_time_stamp.svg"></a> <a href="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp"><img src="https://travis-ci.org/SixArm/sixarm_ruby_time_stamp.png"></a> <a href="https://codeclimate.com/github/SixArm/sixarm_ruby_time_stamp/maintainability"><img src="https://api.codeclimate.com/v1/badges/f6a1b785a22692ac6a92/maintainability"></a></p>
+<ul><li>
+<p>Git: <a href="https://github.com/SixArm/sixarm_ruby_time_stamp">github.com/SixArm/sixarm_ruby_time_stamp</a></p>
+</li><li>
+<p>Doc: <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
+</li><li>
+<p>Gem: <a href="https://rubygems.org/gems/sixarm_ruby_time_stamp">rubygems.org/gems/sixarm_ruby_time_stamp</a></p>
+</li><li>
+<p>Contact: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></p>
+</li><li>
+<p>Project: <a href="CHANGES.md">changes</a>, <a href="LICENSE.md">license</a>, <a href="CONTRIBUTING.md">contributing</a>.</p>
+</li></ul>
 <!--header-shut-->
-
-<h2>Introduction</h2>
+<h2 id="label-Introduction">Introduction</h2>
 
 <p>Provides timestamp methods Time.stamp and Time#stamp</p>
 
-<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">http://sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
+<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_time_stamp/doc">sixarm.com/sixarm_ruby_time_stamp/doc</a></p>
 
 <p>Want to help? We&#39;re happy to get pull requests.</p>
-
 <!--install-open-->
+<h2 id="label-Install">Install</h2>
 
-<h2>Install</h2>
+<h3 id="label-Gem">Gem</h3>
 
-<h3>Gem</h3>
-
-<p>Run this command in your shell or terminal:</p>
+<p>To install this gem in your shell or terminal:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_time_stamp'>sixarm_ruby_time_stamp</span>
 </code></pre>
 
-<p>Or add this to your Gemfile:</p>
+<h3 id="label-Gemfile">Gemfile</h3>
+
+<p>To add this gem to your Gemfile:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
 
-<h3>Require</h3>
+<h3 id="label-Require">Require</h3>
 
 <p>To require the gem in your code:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sixarm_ruby_time_stamp</span><span class='tstring_end'>&#39;</span></span>
 </code></pre>
-
 <!--install-shut-->
-
-<h2>Examples</h2>
+<h2 id="label-Examples">Examples</h2>
 
 <p>Generate a time stamp using the defaults:</p>
 
@@ -116,33 +112,35 @@
 </span></code></pre>
 
 <p>Defaults:</p>
-
-<ul>
-<li>The current time</li>
-<li>The UTC time zone a.k.a. Zulu time zone a.k.a. &quot;Z&quot; time zome.</li>
-<li>Default RFC ISO format: &#39;%Y-%m-%dT%H:%M:%S.%NZ&#39;&quot;</li>
-<li>Nanosecond precision</li>
-</ul>
+<ul><li>
+<p>The current time</p>
+</li><li>
+<p>The UTC time zone a.k.a. Zulu time zone a.k.a. "Z" time zome.</p>
+</li><li>
+<p>Default RFC ISO format: "%Y-%m-%dT%H:%M:%S.%NZ&#39;"</p>
+</li><li>
+<p>Nanosecond precision</p>
+</li></ul>
 
 <p>Set a different format:</p>
 
-<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Time.html" title="Time (class)">Time</a></span></span><span class='period'>.</span><span class='id identifier rubyid_stamp_format'><span class='object_link'><a href="Time.html#stamp_format-class_method" title="Time.stamp_format (method)">stamp_format</a></span></span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y/%M/%D %H:%M:%S UTC</span><span class='tstring_end'>&quot;</span></span>
-<span class='const'><span class='object_link'><a href="Time.html" title="Time (class)">Time</a></span></span><span class='period'>.</span><span class='id identifier rubyid_stamp'><span class='object_link'><a href="Time.html#stamp-class_method" title="Time.stamp (method)">stamp</a></span></span> <span class='comment'>#=&gt; &quot;2020/12/31 12:59:59 UTC&quot;
+<pre class="code ruby"><code class="ruby"><span class='const'><span class='object_link'><a href="Time.html" title="Time (class)">Time</a></span></span><span class='period'>.</span><span class='id identifier rubyid_stamp_format'><span class='object_link'><a href="Time.html#stamp_format-class_method" title="Time.stamp_format (method)">stamp_format</a></span></span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%M/%D %H:%M</span><span class='tstring_end'>&quot;</span></span>
+<span class='const'><span class='object_link'><a href="Time.html" title="Time (class)">Time</a></span></span><span class='period'>.</span><span class='id identifier rubyid_stamp'><span class='object_link'><a href="Time.html#stamp-class_method" title="Time.stamp (method)">stamp</a></span></span> <span class='comment'>#=&gt; &quot;12/31 12:59&quot;
 </span></code></pre>
 
-<p>The same methods are also available for an ins</p>
+<p>The same methods are also available for an instance:</p>
 
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_t'>t</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Time.html" title="Time (class)">Time</a></span></span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span>
 <span class='id identifier rubyid_t'>t</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span> <span class='comment'>#=&gt; &quot;2020-12-31T12:59:59.000000000Z&quot;
-</span><span class='id identifier rubyid_t'>t</span><span class='period'>.</span><span class='id identifier rubyid_stamp_format'>stamp_format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%Y/%M/%D %H:%M:%S UTC</span><span class='tstring_end'>&quot;</span></span>
-<span class='id identifier rubyid_t'>t</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span> <span class='comment'>#=&gt; &quot;2020/12/31 12:59:59 UTC&quot;
+</span><span class='id identifier rubyid_t'>t</span><span class='period'>.</span><span class='id identifier rubyid_stamp_format'>stamp_format</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%M/%D %H:%M</span><span class='tstring_end'>&quot;</span></span>
+<span class='id identifier rubyid_t'>t</span><span class='period'>.</span><span class='id identifier rubyid_stamp'>stamp</span> <span class='comment'>#=&gt; &quot;12/31 12:59&quot;
 </span></code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr  5 18:13:52 2019 by
+  Generated on Thu Apr 25 22:31:21 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.19 (ruby-2.5.1).
+  0.9.19 (ruby-2.6.3).
 </div>
 
     </div>
