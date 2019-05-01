@@ -1,5 +1,6 @@
 # Changes
 
+* 2019-04-19 3.0.1 Modify builds for Ruby 2.3...2.5 and CodeClimate
 * 2019-04-05 3.0.0 Add format string and nanosecond precision
 * 2018-06-22 2.0.0 Update to Ruby 2.5, testing gems, etc.
 * 2017-08-14 1.1.6 Update minitest expectations

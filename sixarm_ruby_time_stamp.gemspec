@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name           = "sixarm_ruby_time_stamp"
   s.summary        = "SixArm.com → Ruby → Time → stamp methods"
   s.description    = "Time stamp methods to generate a string with formatting such as RFC ISO datetime"
-  s.version        = "3.0.0"
+  s.version        = "3.0.1"
 
   s.author         = "SixArm"
   s.email          = "sixarm@sixarm.com"
@@ -22,12 +22,12 @@ Gem::Specification.new do |s|
   s.files = [
     "Rakefile",
     "lib/sixarm_ruby_time_stamp.rb",
-    "lib/sixarm_ruby_time_stamp/time.rb",    
+    "lib/sixarm_ruby_time_stamp/time.rb",
   ]
 
   s.test_files = [
     "test/sixarm_ruby_time_stamp_test.rb",
-    "test/sixarm_ruby_time_stamp_test/time_test.rb",    
+    "test/sixarm_ruby_time_stamp_test/time_test.rb",
   ]
 
   s.add_development_dependency("minitest", ">= 5.11.1", "< 6")
@@ -40,6 +40,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rubycritic", ">= 3.3.0", "< 4")
   s.add_development_dependency("rubocop", ">= 0.52.1", "< 1")
 
-  s.required_ruby_version = ">= 2.5"
+  s.required_ruby_version = ">= 2.3"
 
 end
